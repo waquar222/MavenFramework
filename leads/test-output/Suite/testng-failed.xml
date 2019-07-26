@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test">
+    <classes>
+      <class name="com.autotest.crm.leads.Lead_Test"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.autotest.crm.leads.Lead_Test">
+        <methods>
+          <include name="test_Create_Leads"/>
+          <include name="test_Create_Leads_With_Last_Name_And_Company_Name"/>
+          <include name="test_Create_Leads_With_Lead_Source_Only"/>
+          <include name="test_Create_Leads_With_Industry"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.autotest.crm.leads.Lead_Test -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
